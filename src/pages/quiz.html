@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Enchentes - FloodBrain</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../../index.html" class="logo">Flood<span>Brain</span></a>
+            <nav class="nav">
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="../pages/problema.html">O Problema</a></li>
+                    <li><a href="../pages/tecnologia.html">Tecnologia</a></li>
+                    <li><a href="../pages/objetivos.html">Objetivos</a></li>
+                    <li><a href="../pages/publico.html">Público</a></li>
+                    <li><a href="../pages/beneficios.html">Benefícios</a></li>
+                    <li><a href="../pages/cotidiano.html">Cotidiano</a></li>
+                    <li><a href="../pages/quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        <div class="container">
+            <h1>Quiz sobre Enchentes</h1>
+            <p class="subtitle">Teste seus conhecimentos sobre prevenção e segurança em enchentes</p>
+            
+            <div id="quiz-intro" class="quiz-section active">
+                <div class="quiz-image">
+                    <img src="../assets/quiz.jpg" alt="Pessoa respondendo questionário sobre enchentes">
+                </div>
+                <div class="quiz-content">
+                    <h2>Como funciona?</h2>
+                    <ul>
+                        <li>10 perguntas sobre enchentes e prevenção</li>
+                        <li>Escolha a resposta que considerar correta</li>
+                        <li>No final, veja seu resultado e as respostas corretas</li>
+                    </ul>
+                    <button id="start-quiz" class="btn">Começar Quiz</button>
+                </div>
+            </div>
+            
+            <form id="quiz-form" class="quiz-section">
+                <div class="question-container">
+                    <!-- As perguntas serão inseridas aqui via JavaScript -->
+                </div>
+                <button type="submit" class="btn">Enviar Respostas</button>
+            </form>
+            
+            <div id="quiz-results" class="quiz-section">
+                <div class="results-content">
+                    <h2>Resultado do Quiz</h2>
+                    <p id="result-message"></p>
+                    <div id="answers-container"></div>
+                    <button id="restart-quiz" class="btn">Fazer Novamente</button>
+                    <a href="../../index.html" class="btn secondary">Voltar ao Site</a>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FloodBrain</h3>
+                    <p>Proteção inteligente contra enchentes para um futuro mais seguro.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@floodbrain.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FloodBrain. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/quiz.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
